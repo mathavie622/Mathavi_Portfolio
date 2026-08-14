@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E. Mathavi | Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f5f7fb;
+      color: #222;
+    }
+
+    header {
+      background: #111827;
+      color: white;
+      padding: 18px 8%;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    nav h2 {
+      color: #60a5fa;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #60a5fa;
+    }
+
+    section {
+      padding: 70px 8%;
+    }
+
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: linear-gradient(135deg, #dbeafe, #f5f7fb);
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      color: #111827;
+      margin-bottom: 15px;
+    }
+
+    .hero h3 {
+      color: #2563eb;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      color: #555;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 25px;
+      background: #2563eb;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+
+    .btn:hover {
+      background: #1d4ed8;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 35px;
+      color: #111827;
+    }
+
+    .about-box {
+      max-width: 850px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .skills,
+    .projects,
+    .certificates,
+    .achievements {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      color: #2563eb;
+      margin-bottom: 10px;
+    }
+
+    .skill {
+      display: inline-block;
+      background: #dbeafe;
+      color: #1e40af;
+      padding: 8px 14px;
+      border-radius: 20px;
+      margin: 5px;
+      font-size: 14px;
+    }
+
+    .contact {
+      text-align: center;
+      background: #111827;
+      color: white;
+    }
+
+    .contact a {
+      color: #60a5fa;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0b1120;
+      color: white;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      nav ul {
+        justify-content: center;
+      }
+
+      .hero h1 {
+        font-size: 34px;
+      }
+
+      section {
+        padding: 50px 5%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <h2>Mathavi</h2>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <div>
+    <h1>Hi, I'm E. Mathavi</h1>
+    <h3>Engineering Student | AI & ML Enthusiast</h3>
+    <p>
+      I am an engineering student interested in Artificial Intelligence,
+      Machine Learning, Data Science and Web Development.
+      I enjoy learning new technologies and building practical projects.
+    </p>
+    <a href="#projects" class="btn">View My Projects</a>
+  </div>
+</section>
+
+<section id="about">
+  <h2 class="section-title">About Me</h2>
+  <div class="about-box">
+    <p>
+      I am an engineering student at Sir Isaac Newton College of Engineering
+      and Technology, Pappakovil, Nagapattinam. I am passionate about
+      Artificial Intelligence, Machine Learning, Data Visualization and
+      modern web technologies.
+    </p>
+    <br>
+    <p>
+      My career goal is to develop strong technical skills and build
+      innovative technology solutions that can solve real-world problems.
+    </p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2 class="section-title">My Skills</h2>
+
+  <div class="about-box">
+    <span class="skill">Python</span>
+    <span class="skill">C</span>
+    <span class="skill">C++</span>
+    <span class="skill">Java</span>
+    <span class="skill">HTML</span>
+    <span class="skill">CSS</span>
+    <span class="skill">JavaScript</span>
+    <span class="skill">MySQL</span>
+    <span class="skill">Git</span>
+    <span class="skill">GitHub</span>
+    <span class="skill">VS Code</span>
+    <span class="skill">AI / ML</span>
+    <span class="skill">Data Visualization</span>
+  </div>
+</section>
+
+<section id="projects">
+  <h2 class="section-title">My Projects</h2>
+
+  <div class="projects">
+
+    <div class="card">
+      <h3>Smart Attendance Using AI</h3>
+      <p><b>Problem:</b> Manual attendance takes time and can cause errors.</p>
+      <p><b>Technology:</b> Python, AI, Computer Vision</p>
+      <p>
+        An AI-based attendance concept designed to improve attendance
+        management and reduce manual work.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>AI-Based Climate Disaster Prediction</h3>
+      <p><b>Problem:</b> Climate-related disasters can cause serious damage.</p>
+      <p><b>Technology:</b> Python, AI/ML, Data Visualization</p>
+      <p>
+        A project concept for analysing climate data and providing
+        early-warning insights for disaster prediction.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section id="achievements">
+  <h2 class="section-title">Achievements</h2>
+
+  <div class="achievements">
+    <div class="card">
+      <h3>Technical Activities</h3>
+      <p>Participated in technical learning activities and skill development programs.</p>
+    </div>
+
+    <div class="card">
+      <h3>AI & Technology</h3>
+      <p>Developing practical knowledge through AI, ML and web development projects.</p>
+    </div>
+
+    <div class="card">
+      <h3>Professional Development</h3>
+      <p>Building portfolio projects and improving internship and placement readiness.</p>
+    </div>
+  </div>
+</section>
+
+<section id="certifications">
+  <h2 class="section-title">Certifications</h2>
+
+  <div class="certificates">
+
+    <div class="card">
+      <h3>AI Fundamentals</h3>
+      <p>IBM SkillsBuild</p>
+    </div>
+
+    <div class="card">
+      <h3>Applied AI</h3>
+      <p>GUVI</p>
+    </div>
+
+    <div class="card">
+      <h3>ChatGPT for Everyone</h3>
+      <p>Online Certification</p>
+    </div>
+
+    <div class="card">
+      <h3>Data Science & Analytics</h3>
+      <p>Online Certification</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2 class="section-title" style="color:white;">Contact Me</h2>
+
+  <p>Email:
+    <a href="mailto:mathavi029ece@sincet.ac.in">
+      mathavi029ece@sincet.ac.in
+    </a>
+  </p>
+
+  <p>GitHub:
+    <a href="https://github.com/mathavie622" target="_blank">
+      github.com/mathavie622
+    </a>
+  </p>
+
+  <p>LinkedIn:
+    <a href="#" target="_blank">
+      My LinkedIn Profile
+    </a>
+  </p>
+</section>
+
+<footer>
+  <p>© 2026 E. Mathavi | Professional Portfolio</p>
+</footer>
+
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener("click", function(e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute("href"))
+        .scrollIntoView({ behavior: "smooth" });
+    });
+  });
+
+  console.log("Mathavi Portfolio Loaded Successfully!");
+</script>
+
+</body>
+</html>
